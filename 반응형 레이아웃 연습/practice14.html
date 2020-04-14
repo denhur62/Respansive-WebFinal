@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;}
+    #wrap{width: 100%; margin: 0 auto;}
+    .header{width: 100%;height: 100px;background-color: #b2defe;}
+    .banner{width: 100%;height: 250px; background-color: #7ecbfd;}
+    .c1{float:left; width: 33.3%;height: 300px;background-color: #43b5fc;}
+    .c2{float:left; width: 66.6%;height: 150px;background-color: #00a5fb;}
+    .c3{float:left; width: 66.6%;height: 150px;background-color: #0096fa;}
+    .d1{float: left;height: 200px;width: 33.33%;background-color: #0088ec;}
+    .d2{float: left;height: 200px;width: 33.33%;background-color: #0076d9;}
+    .d3{float: left;height: 200px;width: 33.33%;background-color: #0064c6;}
+    section{overflow: hidden;padding: 5%;height: 200px;width: 90%;background-color: #00a6fc;}
+    section >div{width: 23%;margin: 1%;border-radius: 5px;float: left;height: 170px;background-color: #0076d9;}
+    footer{height: 100px;width: 100%;background-color: #43b5fc;}
+    @media (max-width: 1200px)
+    {
+      #wrap{width: 100%;}
+      .d1{width: 50%;}
+      .d2{width: 50%;}
+      .d3{display:none;}
+      section >div{width: 31.3%;}
+      section > div:nth-child(4){display:none}
+
+    /* 화면 너비 0~768px */
+    @media (max-width: 768px)
+    {
+        .d1{width: 100%;height: 100px;}
+        .d2{width: 100%;height: 100px;}
+    }
+    /* 화면 너비 0~480px */
+    @media (max-width: 480px)
+    {
+      .c1{width: 100%;height: 200px;}
+      .c2{width: 100%;height: 200px;}
+      .c3{width: 100%;height: 200px;}
+      section{height: 550px;}
+      section > div{width: 98%; border-radius: 5px;}
+
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+  <div class="header"></div>
+  <div class="banner"></div>
+  <div class="c1"></div>
+  <div class="c2"></div>
+  <div class="c3"></div>
+  <div class="d1"></div>
+  <div class="d2"></div>
+  <div class="d3"></div>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+    <footer></footer>
+  </div>
+</body>
+</html>
